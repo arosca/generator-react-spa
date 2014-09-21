@@ -1,9 +1,7 @@
 {
   "name": "generator-react-spa",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Yeoman generator",
-  "license": "MIT",
-  "main": "app/index.js",
   "repository": "arosca/generator-react-spa",
   "author": {
     "name": "Andrei Rosca",
@@ -11,7 +9,7 @@
     "url": "https://github.com/arosca"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=0.10.29"
   },
   "scripts": {
     "test": "mocha"
