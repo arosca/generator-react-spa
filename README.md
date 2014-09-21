@@ -1,5 +1,32 @@
 # React single page app generator
 
+## Stack
+
+### React
+
+A javascript library for building user interfaces
+
+### Flux
+
+Flux is the application architecture that Facebook uses for building client-side web applications. It complements React's composable view components by utilizing a unidirectional data flow. It's more of a pattern rather than a formal framework, and you can start using Flux immediately without a lot of new code.
+
+### Browserify
+
+Browserify lets you require('modules') in the browser by bundling up all of your dependencies.
+
+### Sass
+
+Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+
+### Bootstrap
+
+Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.
+
+### Gulp
+
+The streaming build system
+
+
 ## Getting Started
 
 - Install: `npm install -g generator-react-spa`
