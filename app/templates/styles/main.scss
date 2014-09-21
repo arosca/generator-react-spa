@@ -1,0 +1,33 @@
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header {
+    a.active {
+        background: #428bca;
+        color: #fff;
+        &:hover {
+            background: #428bca;
+        }
+    }
+}
+
+footer {
+	margin-top: 20px;
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+    }
+}
