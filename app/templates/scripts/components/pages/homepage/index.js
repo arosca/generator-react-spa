@@ -10,15 +10,15 @@ var Header = require('components/header'),
 
 var HomePage = React.createClass({
     getInitialState: function() {
-        return Store.getCount();
+        return Store.toJSON();
     },
 
     componentDidMount: function() {
-        Store.addChangeListener(this._onChange);
+        Store.listenTo(Store, 'change:counter', this._onChange);
     },
 
     componentWillUnmount: function() {
-        Store.removeChangeListener(this._onChange);
+        Store.stopListening(Store, 'change:counter', this._onChange);
     },
 
     render: function() {
@@ -29,16 +29,19 @@ var HomePage = React.createClass({
                 <div className="jumbotron">
                     <h1>'Allo, 'Allo!</h1>
                     <p className="lead">This is how state works</p>
-                    <p><a className="btn btn-lg btn-success" href="#" onClick={this._clickHandler}>Clicked {this.state.count} times!</a></p>
+                    <p><a className="btn btn-lg btn-success" href="#" onClick={this._clickHandler}>Clicked {this.state.counter} times!</a></p>
                 </div>
 
                 <div className="row">
                     <div className="col-lg-6">
                         <h4>React</h4>
-                        <p>A javascript library for building user interfaces</p>
+                        <p>A javascript library for building user interfaces.</p>
 
                         <h4>Flux</h4>
-                        <p>Flux is the application architecture that Facebook uses for building client-side web applications. It complements React's composable view components by utilizing a unidirectional data flow. It's more of a pattern rather than a formal framework, and you can start using Flux immediately without a lot of new code.</p>
+                        <p>Flux is the application architecture that complements React's composable view components by utilizing a unidirectional data flow.</p>
+
+                        <h4>Backbone</h4>
+                        <p>Backbone.Model's and Backbone.Collection's are used as Flux stores.</p>
 
                         <h4>Browserify</h4>
                         <p>Browserify lets you require('modules') in the browser by bundling up all of your dependencies.</p>
@@ -52,7 +55,7 @@ var HomePage = React.createClass({
                         <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
 
                         <h4>Gulp</h4>
-                        <p>The streaming build system</p>
+                        <p>The streaming build system.</p>
                     </div>
                 </div>
 
@@ -67,7 +70,7 @@ var HomePage = React.createClass({
     },
 
     _onChange: function() {
-        this.setState(Store.getCount());
+        this.setState(Store.toJSON());
     }
 });
 

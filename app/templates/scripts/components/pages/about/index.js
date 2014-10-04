@@ -9,15 +9,15 @@ var Header = require('components/header'),
 
 var AboutPage = React.createClass({
     getInitialState: function() {
-        return Store.getContent();
+        return Store.toJSON();
     },
 
     componentDidMount: function() {
-        Store.addChangeListener(this._onChange);
+        Store.listenTo(Store, 'change:text', this._onChange);
     },
 
     componentWillUnmount: function() {
-        Store.removeChangeListener(this._onChange);
+        Store.stopListening(Store, 'change:text', this._onChange);
     },
 
     render: function() {
@@ -28,14 +28,14 @@ var AboutPage = React.createClass({
                 <div className="jumbotron">
                     <p className="lead">This text is loaded using ajax in the store</p>
                 </div>
-                <p>{this.state.content}</p>
+                <p>{this.state.text}</p>
                 <Footer />
             </div>
         );
     },
 
     _onChange: function() {
-        this.setState(Store.getContent());
+        this.setState(Store.toJSON());
     }
 });
 

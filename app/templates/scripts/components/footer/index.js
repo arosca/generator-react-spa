@@ -7,7 +7,7 @@ var Footer = React.createClass({
     render: function() {
         return (
             <footer>
-            	<p>♥ from the Yeoman team</p>
+            	<p><a href="https://github.com/arosca/generator-react-spa" target="_blank">Frok me on Github</a></p>
             </footer>
         );
     }
