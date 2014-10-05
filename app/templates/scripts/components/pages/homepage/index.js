@@ -41,7 +41,7 @@ var HomePage = React.createClass({
                         <p>Flux is the application architecture that complements React's composable view components by utilizing a unidirectional data flow.</p>
 
                         <h4>Backbone</h4>
-                        <p>Backbone.Model's and Backbone.Collection's are used as Flux stores.</p>
+                        <p>Backbone.Models and Backbone.Collections are used as Flux stores.</p>
 
                         <h4>Browserify</h4>
                         <p>Browserify lets you require('modules') in the browser by bundling up all of your dependencies.</p>

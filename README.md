@@ -12,7 +12,7 @@ Flux is the application architecture that complements React's composable view co
 
 ### Backbone
 
-Backbone.Model's and Backbone.Collection's are used as Flux stores.
+Backbone.Models and Backbone.Collections are used as Flux stores.
 
 ### Browserify
 
