@@ -1,4 +1,4 @@
-# React single page app generator
+# React Single Page App using Flux - Yeoman generator
 
 ## Stack
 
