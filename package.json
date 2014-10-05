@@ -1,6 +1,6 @@
 {
   "name": "generator-react-spa",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Yeoman generator",
   "repository": "arosca/generator-react-spa",
   "author": {
