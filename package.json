@@ -1,7 +1,7 @@
 {
   "name": "generator-react-spa",
-  "version": "0.1.5",
-  "description": "Yeoman generator",
+  "version": "0.1.6",
+  "description": "React Single Page App using Flux - Yeoman generator",
   "repository": "arosca/generator-react-spa",
   "author": {
     "name": "Andrei Rosca",
@@ -18,7 +18,7 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator","react","flux","spa","gulp"
+    "yeoman-generator","react","flux","spa","gulp","browserify"
   ],
   "dependencies": {
     "yeoman-generator": "^0.17.0",
