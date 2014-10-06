@@ -9,11 +9,13 @@ Views ---> (actions) ----> Dispatcher ---> (registered callback) ---> Stores ---
 */
 
 var React = require('react'),
-
     Router = require('react-router'),
     Routes = Router.Routes,
     Route = Router.Route,
     DefaultRoute = Router.DefaultRoute;
+
+// Export React so the dev tools can find it
+(window !== window.top ? window.top : window).React = React;
 
 var HomePage = require('components/pages/homepage'),
     AboutPage = require('components/pages/about'),
