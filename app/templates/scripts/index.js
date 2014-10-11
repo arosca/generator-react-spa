@@ -19,6 +19,7 @@ var React = require('react'),
 
 var HomePage = require('components/pages/homepage'),
     AboutPage = require('components/pages/about'),
+    ProductsPage = require('components/pages/products'),
     ContactPage = require('components/pages/contact');
 
 var App = React.createClass({
@@ -29,6 +30,8 @@ var App = React.createClass({
                 <Route name="home" path="/" handler={HomePage}>
                 </Route>
                 <Route name="about" path="about" handler={AboutPage}>
+                </Route>
+                <Route name="products" path="products" handler={ProductsPage}>
                 </Route>
                 <Route name="contact" path="contact" handler={ContactPage}>
                 </Route>

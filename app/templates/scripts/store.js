@@ -4,12 +4,12 @@ var Dispatcher = require('dispatcher'),
 
     $ = require('jquery'),
     Backbone = require('backbone');
-    
+
 Backbone.$ = $;
 
 var Store = Backbone.Model.extend({
     url: 'http://baconipsum.com/api/?type=meat-and-filler',
-    
+
     parse: function(data) {
         return {text: data[0]};
     },
@@ -38,6 +38,9 @@ Dispatcher.register(function(payload) {
         case Const.USER_MESSAGE:
             store.set({ message: action.message });
             alert(store.get('message'));
+            break;
+        case Const.GET_TEXT:
+            store.set(store.defaults).fetch();
             break;
         default:
             return true;

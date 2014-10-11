@@ -1,11 +1,13 @@
 /** @jsx React.DOM */
 'use strict';
 
-var React = require('react');
+var React = require('react'),
+    Button = require('react-bootstrap/button');
 
 var Header = require('components/header'),
     Footer = require('components/footer'),
-    Store = require('store');
+    Store = require('store'),
+    Actions = require('actions');
 
 var AboutPage = React.createClass({
     getInitialState: function() {
@@ -27,6 +29,7 @@ var AboutPage = React.createClass({
 
                 <div className="jumbotron">
                     <p className="lead">This text is loaded using ajax in the store</p>
+                    <Button bsStyle="success" onClick={this._handleClick}>Get new text</Button>
                 </div>
                 <p>{this.state.text}</p>
                 <Footer />
@@ -36,6 +39,10 @@ var AboutPage = React.createClass({
 
     _onChange: function() {
         this.setState(Store.toJSON());
+    },
+
+    _handleClick: function() {
+      Actions.getText();
     }
 });
 

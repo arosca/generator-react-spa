@@ -9,6 +9,12 @@ var Actions = {
         });
     },
 
+    getText: function() {
+        Dispatcher.handleViewAction({
+            'actionType': Const.GET_TEXT
+        });
+    },
+
     userMessage: function(message) {
         Dispatcher.handleViewAction({
             'actionType': Const.USER_MESSAGE,

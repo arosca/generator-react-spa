@@ -58,7 +58,7 @@ var ReactSpaGenerator = yeoman.generators.Base.extend({
   },
 
   end: function () {
-    this.installDependencies();
+    this.installDependencies({bower: false});
   }
 });
 
