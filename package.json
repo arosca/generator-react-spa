@@ -1,6 +1,6 @@
 {
   "name": "generator-react-spa",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "React Single Page App using Flux - Yeoman generator",
   "repository": "arosca/generator-react-spa",
   "author": {

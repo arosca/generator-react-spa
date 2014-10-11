@@ -42,8 +42,6 @@ var ReactSpaGenerator = yeoman.generators.Base.extend({
       this.directory('styles', 'app/styles');
 
       this.src.copy('_package.json', 'package.json');
-      this.src.copy('_bower.json', 'bower.json');
-      this.src.copy('_bowerrc', '.bowerrc');
       this.src.copy('_gitignore', '.gitignore');
       this.src.copy('index.html', 'app/index.html');
       this.src.copy('README.md', 'README.md');
