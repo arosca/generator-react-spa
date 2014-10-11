@@ -40,7 +40,7 @@ Dispatcher.register(function(payload) {
             alert(store.get('message'));
             break;
         case Const.GET_TEXT:
-            store.set(store.defaults).fetch();
+            store.set(store.defaults).fetch({cache: false});
             break;
         default:
             return true;
