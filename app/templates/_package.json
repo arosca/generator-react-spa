@@ -1,4 +1,8 @@
 {
+  "repository": {
+    "type": "git",
+    "url": "..."
+  },
   "devDependencies": {
     "browserify": "^5.11.2",
     "commondir": "0.0.1",
