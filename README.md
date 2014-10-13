@@ -4,7 +4,7 @@
 
 ### React
 
-A javascript library for building user interfaces
+A javascript library for building user interfaces.
 
 ### Flux
 
@@ -22,13 +22,13 @@ Browserify lets you require('modules') in the browser by bundling up all of your
 
 Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
 
-### Bootstrap
+### React-Bootstrap
 
-Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.
+The most popular front-end framework, rebuilt for React.
 
 ### Gulp
 
-The streaming build system
+The streaming build system.
 
 
 ## Getting Started
@@ -39,8 +39,8 @@ The streaming build system
 
 ## TODO
 
-- Integrate bootstrap js components and samples
 - Include testing framework and test samples
+- Use es6ify
 
 ## Contribute
 
